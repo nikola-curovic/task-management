@@ -1,0 +1,8 @@
+<div
+  class="px-4 py-3 task-container"
+  *ngFor="let task of tasks"
+  [class.completed]="task.completed"
+  (click)="markTaskAsCompleted(task.id)"
+>
+  <span>{{ task.title }}</span>
+</div>

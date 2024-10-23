@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
     this.tasks = this.taskService.getTasks();
   }
 
-  filterTask(filter: string) {
+  filterTask(filter: string): void {
     this.tasks = this.taskService.filterTasks(filter);
   }
 }
